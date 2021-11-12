@@ -68,9 +68,14 @@
 	var mcDonaldscorplaceofwork = L.marker([51.125401, -2.754213]);
 	mcDonaldscorplaceofwork.bindPopup("<img style='width: 300px' src='maccies.jpg'/><b>Mcdonald's/ Cor's Place of Work</b>").openPopup();
 	
+	var glastonTor = L.marker([51.144692, -2.698664]);
+	glastonTor.bindPopup("<img style='width: 300px' src='the tor.jfif'/><b>Glastonbury Tor</b>").openPopup();
+	
 	var college = L.layerGroup([cBlock, eBlock]).addTo(mymap);
 	
 	var street = L.layerGroup([frankieBenny, mcDonaldscorplaceofwork]).addTo(mymap);
+	
+	var glastonbury = L.layerGroup([glastonTor]).addTo(mymap);
       
 	var baseMaps = {
            "OSM": osm,
@@ -80,7 +85,8 @@
 	    "Surface": surface,
             //"Tor": tor,
             "College": college,
-	    "Street" : street
+	    "Street" : street,
+	    "Glastonbury" : glastonbury
         };
         L.control.layers(baseMaps, overlayMaps).addTo(mymap);
 	
