@@ -66,6 +66,8 @@
 	frankieBenny.bindPopup("<img style='width: 300px' src='frank and benny.jpg'/><b>Frankie And Benny's</b>").openPopup();
 	
 	var college = L.layerGroup([cBlock, eBlock]).addTo(mymap);
+	
+	var street = L.layerGroup([frankieBenny]).addTo(mymap);
       
 	var baseMaps = {
            "OSM": osm,
