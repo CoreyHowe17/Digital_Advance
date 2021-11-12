@@ -65,9 +65,12 @@
 	var frankieBenny = L.marker([51.129310, -2.739944]);
 	frankieBenny.bindPopup("<img style='width: 300px' src='frank and benny.jpg'/><b>Frankie And Benny's</b>").openPopup();
 	
+	var mcDonaldscorplaceofwork = L.marker([51.125401, -2.754213]);
+	mcDonaldscorplaceofwork.bindPopup("<img style='width: 300px' src='maccies.jpg'/><b>Mcdonald's/ Cor's Place of Work</b>").openPopup();
+	
 	var college = L.layerGroup([cBlock, eBlock]).addTo(mymap);
 	
-	var street = L.layerGroup([frankieBenny]).addTo(mymap);
+	var street = L.layerGroup([frankieBenny, mcDonaldscorplaceofwork]).addTo(mymap);
       
 	var baseMaps = {
            "OSM": osm,
