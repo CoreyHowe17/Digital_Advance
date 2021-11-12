@@ -65,6 +65,9 @@
 	var jBlock = L.marker([51.129495, -2.732101]);
 	jBlock.bindPopup("<img style='width: 300px' src='j block.jpg'/><b>J Block</b><br>Strode College").openPopup();
 	
+	var jBlock = L.marker([51.129495, -2.732101]);
+	mBlock.bindPopup("<img style='width: 300px' src='m block.jpg'/><b>M Block</b><br>Strode College").openPopup();
+	
 	var frankieBenny = L.marker([51.129310, -2.739944]);
 	frankieBenny.bindPopup("<img style='width: 300px' src='frank and benny.jpg'/><b>Frankie And Benny's</b>").openPopup();
 	
@@ -74,7 +77,7 @@
 	var glastonTor = L.marker([51.144692, -2.698664]);
 	glastonTor.bindPopup("<img style='width: 300px' src='the tor.jfif'/><b>Glastonbury Tor</b>").openPopup();
 	
-	var college = L.layerGroup([cBlock, eBlock, jBlock]).addTo(mymap);
+	var college = L.layerGroup([cBlock, eBlock, jBlock, mBlock]).addTo(mymap);
 	
 	var street = L.layerGroup([frankieBenny, mcDonaldscorplaceofwork]).addTo(mymap);
 	
